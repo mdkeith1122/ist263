@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Intro</title>
+        <style>
+            /* you can do multiple declarations per selector*/
+            /*cornflowerblue over rode on the p but font family works for all tags*/
+            body {
+            /*whole body changed*/
+                color:cornflowerblue;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                }
+            p {
+            /*only things in p tag changed*/
+                color:blueviolet; 
+                font-size: 2em; /* this should be twice default size */
+                font-weight:bolder;
+            }
+            /*group selector, selects more than one element*/
+            p, li {
+                text-align: center;
+            }
+           li a {color:darkorange;}
+           /* descendant selector - the space means we are only styling a tags inside li tags*/
+            #firstp {color:rgb(228, 32, 32);}
+            /* above is an id selector */
+            .otherthing {color:deeppink;}
+            /* above is a class selector */
+        </style>
+    </head>
+    <body>
+        <!-- id values must be unique -->
+        <p id="firstp">Lorem ipsum <a href="http://www.google.com>">Google</a></p>
+        <!-- class attribute values can be used over and over again -->
+        <p class="otherthing">Second paragraph</p>
+        <p>Third paragraph</p>
+        <ul><li>My list item <a href="http://www.google.com>">Google</a></li></ul>
+    </body>
+</html>
