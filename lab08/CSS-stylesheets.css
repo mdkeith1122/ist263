@@ -1,0 +1,27 @@
+h1 {color: #340373;}
+
+body {
+    background-color: #e5d1ff;
+    color: #000000;
+}
+
+a:link {color: #340373;}
+a:visited {color: #8e839c;}
+a:hover {color: #c8c7c9;}
+
+nav {
+    background-color: #000000;
+}
+
+nav a {color: #52abff;}
+
+nav a:hover{
+    background-color: #eae4f5;
+}
+
+nav {
+    background-color: #4b0085;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 1em;
+}
