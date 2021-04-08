@@ -27,8 +27,8 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
-    body {background-color: white;}
-    nav a {width: 100%;}
+    nav a {width: 100%; display: block; padding: 5px;}
+    span {display: none;}
 }
 
 @media only screen and (min-width: 920px) {
