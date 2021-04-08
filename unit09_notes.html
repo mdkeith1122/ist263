@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- this makes the page load full size on mobile, include on every vs code -->
+        <title>Unit 9 Notes Responsive Design</title>
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            .row1 { 
+                padding: 80px;
+                margin-top: 40px;}
+            .row1 div {
+                padding: 40px;
+            }
+            .banner {width: 100%;} /* NEED % */
+            .bannersmall {max-width: 100%;} /* NEED % */
+            /* max-width scaled image to page width without making it larger than its file size */
+            .row1 {display: flex; flex-wrap: wrap;}
+            .box1, .box2, .box3 {flex: 1;}
+
+            @media only screen and (max-width: 600px) /* no semicolon */  {
+                body {background-color: orange;}
+                .row1 div {padding: 0px;} /* padding around each column */
+                .row1 {padding: 0px;} /* padding around the whole row itself */
+                .sidebar {display: none;} /* makes the selected item dissapear */
+            }
+            /* this one is for tablet size and larger */
+            @media only screen and (min-width: 920px) {
+                body {background-color: blue;}
+            }
+            /* the 600px in the media query is called a breakpoint */
+            .maincontent {
+                width: 70%;
+                float: left;
+            }
+            .sidebar {
+                float: right;
+                width: 20%;
+                border: 1px solid orange;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Flexbox</h1>
+        <div class="maincontent">
+
+            <!-- large width banner image -->
+            <img src="https://laferger.github.io/ist263/images/forever_orange.jpg" alt="large campus banner" class="banner">
+
+            <!-- smaller width banner image -->
+            <img src="https://laferger.github.io/ist263/images/forever_orange_small.jpg" alt="small campus banner" class="bannersmall">
+            
+            <!-- this row is coming from https://www.syracuse.edu/about/ -->
+            <div class="row1">
+                <div class="box1">
+                    <img src="https://laferger.github.io/ist263/images/eighty-percent-numeral-800x533.png" alt="80 percent"><br>
+                    <p>80% of Syracuse University students received some form of financial support totaling more than $414 million (2019-2020 data)</p>
+                </div>
+                <div class="box2">
+                    <img src="https://laferger.github.io/ist263/images/eighty-seven-percent-800x533.png" alt="87 percent">
+                    <p>87% placement outcome (Graduates in full-and part-time positions, military service, volunteer or service programs, and graduate school.)</p>
+                </div>
+                <div class="box3">
+                    <img src="https://laferger.github.io/ist263/images/ninety-percent-800x533.png" alt="90 percent">
+                    <p>Positions related to Career Goals</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+                <aside>
+                    <h2>What does Syracuse University Tuition Cost?</h2>
+                    <p>Marzipan icing apple pie jelly-o chocolate bar jujubes powder. Ice cream jelly tiramisu. Carrot cake oat cake candy canes soufflé jelly wafer. Candy canes oat cake muffin cupcake carrot cake tootsie roll toffee cake. Tart bear claw powder candy canes lollipop sugar plum icing dessert. Lemon drops caramels bonbon.
+                    </p>
+                </aside>
+         </div>
+    </body>
+</html>
