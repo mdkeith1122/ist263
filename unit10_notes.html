@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 10 Notes Accessibility</title>
+        <style>
+            #skip {
+                position: absolute;
+                left: -999px;
+                background-color: white;
+                border: 1px solid black;
+            }
+            /* this position based on top left of viewport and pushes the skip like off screen */
+            #skip:focus {
+                position: absolute;
+                left: 10px;
+            }
+            /* when you tab to skip link it moves it back on screen */
+        </style>
+    </head>
+    <body>
+        <h1>Accessibility</h1>
+        <!-- make sure you use h1 for main heading, h2 for subheading, h3 for sub-subheading, etc.-->
+
+        <img src="images/LI-Logo.png" width="300" alt="lindkn logo">
+        <!-- nothing in quotes in alt tag means screen reader ignores it -->
+        <!-- don't put "imgae" or "photo of" in alt -->
+
+        <a href="#maincontent" id="skip">Skip to Content</a>
+        <!-- pound sign says we are linking within page to an element that has an id of maincontent-->
+        <a href="http://www.google.com" tabindex="3">Google</a>
+        <a href="http://www.amazon.com" tabindex="2">Amazon</a>
+        <a href="http://www.ebay.com" tabindex="1">Ebay</a>
+        <!-- for compelx layouts tabindex determines order of items tabbed through-->
+
+        <p>Marzipan sweet roll brownie sweet pastry danish. Jujubes cheesecake gummies macaroon wafer tiramisu sesame snaps. Brownie wafer danish jelly soufflé oat cake jujubes dessert candy. Cheesecake tart cake sweet roll tart tootsie roll tiramisu. Danish sugar plum sugar plum. Icing jujubes candy caramels. Sugar plum sweet roll cotton candy cupcake. Biscuit cheesecake cake marshmallow sweet roll icing. Topping jelly-o fruitcake gummies icing. Croissant caramels chocolate pie tart. Ice cream dragée tart liquorice donut marzipan sweet roll toffee. Pastry cheesecake tart jelly beans macaroon. Gummies chocolate cake cupcake icing apple pie cheesecake.</p>
+
+        <a id="maincontent"></a>
+        <!-- here's the thing the anchor tag links to -->
+        <p>Muffin croissant pie cheesecake donut cotton candy. Jelly gummies topping pastry marshmallow powder. Chocolate bar chupa chups lollipop. Halvah jujubes cotton candy toffee. Marzipan croissant candy canes liquorice marshmallow gummi bears cake cupcake. Donut sesame snaps apple pie pudding. Tart dragée chocolate cake lollipop. Sweet roll tootsie roll biscuit chocolate cake cookie tootsie roll pastry bonbon chocolate. Bear claw marzipan donut macaroon tart. Apple pie powder biscuit candy canes chocolate bar soufflé dragée tart. Donut caramels candy cotton candy. Halvah icing candy canes pudding cupcake. </p>
+    </body>
+</html>
