@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 11 Challenge</title>
+        <script>
+            function FirstFunction() {
+                alert('You left this form element');
+                document.getElementById("message").innerHTML = "You left this form element";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="comment box">
+            <form action="mailto:mdkeith@syr.edu" method="post"></form>
+            <h1>Comments</h1>
+            <form action="mailto:mdkeith@syr.edu" method="POST">
+                <label for="firstnamelastname">First and last name:</label>
+                <input type="text" name="firstnamelastname" id="firstnamelastname" onblur="FirstFunction();"><br>
+                <div id="message"></div> <!-- this is where I'm gonna bring up the message -->
+
+               <label for="comments">Enter here:</label><br>
+               <textarea name="comments" id="comments" rows="10" cols="100"></textarea>
+     
+               <p>Select your age</p>
+               <label for="age_under16">Under 16</label>
+               <input type="radio" name="age" id="age_under16" value="Under 16">
+               <label for="age_17-24">17-24</label>
+               <input type="radio" name="age" id="age_17-24" value="17-24">
+               <label for="age_25-54">25-54</label>
+               <input type="radio" name="age" id="age_25-54" value="25-54">
+               <label for="age_55andolder">55 and older</label>
+               <input type="radio" name="age" id="age_55andolder" value="55 and older"><br>
+     
+     
+               <input type="submit" value="Send application">
+     
+             </form>
+        </div>
+    </body>
+</html>

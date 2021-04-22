@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chareset="utf-8">
+        <title>Unit 11 Notes</title>
+        <!-- script tag is for embedding javascript in html, can go anywhere in document but prof. normally puts it in head tag -->
+        <script>
+            /* code is named SayHello (case sensitive), it must have curly brackets to start and end the named code */
+            function SayHello() {
+                alert('Hello World');
+            }
+            function SecondFunction(){
+                alert('You are leaving this page.')
+            }
+            function ThirdFunction(){
+                alert('Third Alert')
+            }
+            /* alert is my function, parenthesis after, inside quotes with a message, semicolon at the end of every line */
+        </script>
+    </head>
+    <body onload="SayHello();">
+        <!-- this onload is telling our named code to run -->
+        <p>Jujubes cheesecake lemon drops jelly beans. Tootsie roll gummi bears ice cream sesame snaps chocolate bar marzipan. Jujubes jelly-o I love candy chocolate cake lemon drops. Topping lollipop cake sweet I love I love lemon drops I love tart. Biscuit wafer sweet I love sweet. Topping marzipan powder topping bear claw jelly-o jelly carrot cake jujubes. Jujubes bear claw I love gummi bears chupa chups dessert. Lollipop caramels biscuit. Donut chocolate bar lemon drops carrot cake I love ice cream. Toffee jujubes dessert cake pie chocolate dessert danish. Marshmallow lollipop candy. Jujubes candy canes jelly beans brownie croissant apple pie. Pastry caramels jelly icing I love chupa chups cupcake I love lemon drops. Cupcake cake chupa chups sweet macaroon jelly oat cake apple pie sesame snaps.</p>
+        <p>Think of cheeseburgers like a Tinder match. They might not all be your soulmate but you’ve gotta find out to be sure. It can get a little messy and that’s just part of the fun. Some are cheesy, others can be a little dry, and the rare few are a disaster. There are so many cheeseburgers out there it can be hard to commit to just one favourite. That being said, when you know, you just know. Everyone has their perfect match. Sometimes it’s just around the corner, other times you have to travel the world in search of it. Wherever your perfect cheeseburger is, it’s out there.</p>
+        <a href="http://www.google.com" onclick="SecondFunction();">Google</a> <br>
+        <a href="" onclick="ThirdFunction();">Another Link</a>
+        <!-- these links both use onclick but run different javascript functions -->
+    </body>
+</html>
