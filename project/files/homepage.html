@@ -5,7 +5,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project_stylesheet.css">
     <title>Homepage</title>
+    <style>
+        .topbio {display: flex;}
+            .bioimage {order: 1;}
+            .biotext {order: 2; margin-left: 2em; margin-top: 10em;}
+        .topbio {background-color: #ffffff; border-radius: 1em; padding: 10px;}
+
+        .row1, .row2 {display: flex; justify-content: center;}
+    </style>
 </head>
 
 <body>
@@ -24,29 +33,51 @@
         <a href="suggestions.html">Suggestions</a>
     </nav><br>
     <a href="#maincontent" id="skip">Skip to Content</a>
-    <div class="top bio">
         <h1>Bio</h1>
+    <div class="topbio">
+    <div class="biotext">
         <p>
             Maddie Keith is a second-year undergraduate student at Syracuse University, and is currently studying film production in the S.I. Newhouse School of Public Communications with a minor in Information Management and Technology in the iSchool. Her passion for film started at a very young age when she would hang out on the small sets of music videos and short films that her dad was always a part of. In high school, she followed the advanced film track, where she began to explore the ways to critically analyze film. At Syracuse, she has taken classes where she continued to apply this knowledge of analytical writing and learned even more about what techniques make film good. Maddie hopes to continue to learn about film and apply that knowledge when making her own films in the future.
         </p>
-        <img src="../images/headshot2.png" alt="headshot" class="sideheadshot" width="400" height="530">
     </div>
+    <div class="bioimage">
+        <img src="../images/bio_pic.jpg" alt="biopicture" class="biopicture" width="400" height="650">
+    </div>
+    </div>
+    <h1>Movie List</h1>
     <div class="movielist">
-        <h1>Movie List</h1>
+        <div class="row1">
+            <div class="firstposter">
             <img src="../images/parasiteposter.jpg" alt="Parasite movie poster" width="400" height="530">
             <p>1. Parasite</p>
+            </div>
+            <div class="secondposter">
             <img src="../images/getoutposter.jpg" alt="Get Out movie poster" width="400" height="530">
             <p>2. Get Out</p>
+            </div>
+            <div class="thirdposter">
             <img src="../images/psychoposter.jpg" alt="Psycho movie poster" width="400" height="530">
             <p>3. Psycho</p>
+            </div>
+            <div class="fourthposter">
             <img src="../images/trialofthechicago7.jpg" alt="Trial of the Chicago 7 movie poster" width="400" height="530">
             <p>4. Trial of the Chicago 7</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="fifthposter">
             <img src="../images/setitupposter.jpg" alt="Set It Up movie poster" width="400" height="530">
             <p>5. Set It Up</p>
+            </div>
+            <div class="sixthposter">
             <img src="../images/booksmartposter.jpg" alt="Booksmart movie poster" width="400" height="530">
             <p>6. Booksmart</p>
+            </div>
+            <div class="seventhposter">
             <img src="../images/cocoposter.jpg" alt="Coco movie poster" width="400" height="530">
             <p>7. Coco</p>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <footer>
