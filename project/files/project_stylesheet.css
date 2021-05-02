@@ -2,6 +2,41 @@ a:link {color: #000000;}
 a:visited {color: #00498a;}
 a:hover {color: #000000;}
 
+.dropbutton {
+    background-color: #d5e1eb;
+    color: #00498a;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 140px;
+    box-shadow: 0px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color:#000000;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #d5e1eb;}
+.dropdown:hover .dropdown-content {display: block;}
+
+
 body {
     background-color: #d5e1eb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
 }
