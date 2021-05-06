@@ -6,13 +6,14 @@ h1 {font-family: 'Inconsolata', monospace;}
 p {font-family: 'Inconsolata', monospace;}
 footer {font-family: 'Inconsolata', monospace;}
 form {font-family: 'Inconsolata', monospace;}
+nav {font-family: 'Inconsolata', monospace;}
 
 .dropbutton {
     background-color: #d5e1eb;
     color: #00498a;
     padding: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;
     border: none;
 }
 
