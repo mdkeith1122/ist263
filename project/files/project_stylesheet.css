@@ -2,6 +2,11 @@ a:link {color: #000000;}
 a:visited {color: #00498a;}
 a:hover {color: #000000;}
 
+h1 {font-family: 'Inconsolata', monospace;}
+p {font-family: 'Inconsolata', monospace;}
+footer {font-family: 'Inconsolata', monospace;}
+form {font-family: 'Inconsolata', monospace;}
+
 .dropbutton {
     background-color: #d5e1eb;
     color: #00498a;
