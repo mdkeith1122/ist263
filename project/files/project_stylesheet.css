@@ -6,10 +6,14 @@ h1 {font-family: 'Inconsolata', monospace;}
 p {font-family: 'Inconsolata', monospace;}
 footer {font-family: 'Inconsolata', monospace;}
 form {font-family: 'Inconsolata', monospace;}
-nav {font-family: 'Inconsolata', monospace;}
+nav {
+    font-family: 'Inconsolata', monospace;
+    background-color: #dbffd9;
+    border-radius: 5em;
+}
 
 .dropbutton {
-    background-color: #d5e1eb;
+    background-color: #dbffd9;
     color: #00498a;
     padding: 0px;
     font-family: 'Inconsolata', monospace;
@@ -48,6 +52,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    nav a {width: 100%; display: block; padding: 5px;}
+    nav a {width: 100%; display: block; padding: 10px;}
     span {display: none;}
 }
