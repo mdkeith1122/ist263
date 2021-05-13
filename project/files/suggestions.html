@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="project_stylesheet.css">
     <title>Suggestions</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <script>
+        function SubmitMessage (){
+            alert('Thank You!')
+        }
+    </script>
     <style>
         .topbanner {
             margin: 0 auto;
@@ -51,7 +56,7 @@
     <div class="suggestion box">
         <form action="mailto:mdkeith@syr.edu" method="post"></form>
         <h1>Have thoughts on the list or your own reccomendations? Let me know!</h1>
-        <form action="mailto:mdkeith@syr.edu" method="POST">
+        <form action="mailto:mdkeith@syr.edu" method="POST" onsubmit="SubmitMessage();">
             <label for="firstnamelastname">First and last name:</label>
             <input type="text" name="firstnamelastname" id="firstnamelastname"><br>
  
